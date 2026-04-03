@@ -101,6 +101,7 @@ Here’s a detailed diagram of the ETL pipeline:
           │ Dashboard      │
           │ Charts & Graphs│
           └────────────────┘
+
 This shows exactly how data flows from extraction → transformation → storage → visualization.
 
 🔹 5. Key Features
