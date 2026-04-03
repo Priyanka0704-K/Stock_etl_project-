@@ -71,37 +71,22 @@ Highlight key indicators like moving averages
 📊 4. Proper Workflow Diagram
 Here’s a detailed diagram of the ETL pipeline:
 
-┌──────────────┐
-          │  Stock APIs    │
-          │ (Yahoo/Alpha)  │
-          └───────┬────────┘
-                  │ Extract
-                  ▼
-          ┌────────────────┐
-          │ Data Extraction│
-          │  (Python/API)  │
-          └───────┬────────┘
-                  │ Transform
-                  ▼
-          ┌────────────────┐
-          │ Data Cleaning  │
-          │ & Processing   │
-          │ (Pandas/NumPy) │
-          └───────┬────────┘
-                  │ Load
-                  ▼
-          ┌────────────────┐
-          │ Data Storage   │
-          │ (CSV/Postgres) │
-          └───────┬────────┘
-                  │ Visualize
-                  ▼
-          ┌────────────────┐
-          │ Streamlit      │
-          │ Dashboard      │
-          │ Charts & Graphs│
-          └────────────────┘
-
+🟢 Stock APIs
+      ↓
+🔍 Extract Data
+      ↓
+⚙️ Transform Data
+   • Clean data
+   • Calculate moving averages
+   • Compute trends
+      ↓
+💾 Load Data
+   • CSV / Database
+      ↓
+📊 Visualize Data
+   • Streamlit dashboard
+   • Charts & Filters
+   
 This shows exactly how data flows from extraction → transformation → storage → visualization.
 
 🔹 5. Key Features
